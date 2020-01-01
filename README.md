@@ -6,6 +6,8 @@
 1. Build Docker Image of position-simulator  
 2. docker network create locationtracker
 3. docker run -d -p 8161:8161 -p 61616:61616 --name myqueue --network locationtracker guptavinodkumar/activemq:0.0.1-RELEASE
+   ** verify that queue is running using url: http://localhost:8161 (login==> admin/admin)
+   
 4. docker run --network locationtracker --env spring.activemq.broker-url=tcp://myqueue:61616 --env fleetman.position.queue=positionQueue guptavinodkumar/position-simulator:0.0.1-RELEASE
 
 
