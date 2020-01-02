@@ -3,7 +3,9 @@
 
 ## TEST APPLICATION 
 
-1. Build Docker Image of position-simulator  
+1. Build Docker Image of position-simulator: 
+push docker image in docker-hub: docker push guptavinodkumar/lt-position-simulator:0.0.1-RELEASE
+ 
 2. docker network create locationtracker
 3. docker run -d -p 8161:8161 -p 61616:61616 --name myqueue --network locationtracker guptavinodkumar/activemq:0.0.1-RELEASE
    ** verify that queue is running using url: http://localhost:8161 (login==> admin/admin)
@@ -13,8 +15,8 @@
 
 ## BUILD CONTAINER FOR ActiveMQ QUEUE
 1. In cmd prmpt > navigate to activemq folder 
-2. Build image > >docker image build -t guptavinodkumar/activemq:0.0.1-RELEASE .
-
+2. Build image > docker image build -t guptavinodkumar/lt-activemq:0.0.1-RELEASE .
+3. Push image in docker-hub: > docker push guptavinodkumar/lt-activemq:0.0.1-RELEASE
 
 
 

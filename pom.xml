@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.lt</groupId>
-	<artifactId>position-simulator</artifactId>
+	<artifactId>lt-position-simulator</artifactId>
 	<version>0.0.1-RELEASE</version>
 	<packaging>jar</packaging>
 
-	<name>position-simulator</name>
+	<name>lt-position-simulator</name>
 	<description>A microservice that simulates the positional reports from vehicles</description>
 
 	<parent>
